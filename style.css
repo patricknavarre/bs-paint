@@ -1,29 +1,59 @@
+body {
+  background-image: url("https://wallpapercave.com/wp/wp3284839.gif");
+    padding:0;
+    margin:0;
+    background-size: contain;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+
 .app {
   display: flex;
-  height: 500px;
+  height: 700px;
+  flex-direction: column;
+  align-content: stretch;
 }
 
 .headings {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 40px;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 .brush-selection {
   height: 70px;
   display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
 }
 
 .paint {
   height: 250px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .palette {
   display: flex;
-  margin-left: -30px;
+
+  margin-left: 30px;
+  padding-right: 65px;
 }
 
 .brush {
   display: flex;
+  justify-content: center;
+  
 }
 
 .icon {
@@ -32,40 +62,74 @@
 }
 
 .current-brush, .palette-color {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border: 1px solid black;
 }
 
 .canvas {
   display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
-  height: 300px;
-  width: 300px;
-  border: 1px solid black;
+  grid-template-rows: repeat(50, 1fr);
+  grid-template-columns: repeat(50, 1fr);
+  height: 500px;
+  width: 500px;
+  border: 2px solid rgb(115, 94, 135);
+  justify-content: space-around;
+  cursor: crosshair;
 }
 
 .square {
-  transition: 0.5s;
+  transition: .7s;
 }
 
 .color-1 {
-
+  background-color: rgb(0,190,221);
 }
 
 .color-2 {
-
+  background-color: rgb(148,148,148);
 }
 
 .color-3 {
+  background-color: rgb(247,66,81);
 
 }
 
 .color-4 {
+  background-color: rgb(224,37,17);
 
 }
 
 .color-5 {
+  background-color: white;
 
+}
+
+.color-6 {
+  background-color: rgb(63,67,70);
+}
+
+.color-7 {
+  background-color: rgb(9,129,160);
+}
+
+.color-8 {
+  background-color: rgb(246,203,169)
+}
+
+.color-9 {
+  background-color: rgb(15,13,13);
+}
+
+.color-10 {
+  background-color: rgb(63,100,1);
+}
+
+.erase {
+  display: flex;
+  border-radius: 8px;
+}
+
+.erase:hover {
+  
 }
