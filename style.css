@@ -6,6 +6,8 @@ body {
 .app {
   display: grid;
   align-content: center;
+  padding-left: 200px;
+  padding-bottom: 20px;
     
 }
 
@@ -21,7 +23,6 @@ body {
 .brush-selection {
   height: 70px;
   display: flex;
-  flex-direction: column;
 }
 
 .paint {
@@ -79,7 +80,7 @@ body {
 }
 
 .color-2 {
-  background-color: rgb(148,148,148);
+  background-color: rgb(201, 211, 52);
 }
 
 .color-3 {
